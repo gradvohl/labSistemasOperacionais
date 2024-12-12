@@ -59,7 +59,7 @@ int main(void)
      pthread_t thd0, thd1;
      /**
       * Incializa as threads
-      * 1o parametro: variavel thread
+      * 1o parametro: variavel com o identificador da thread
       * 2o parametro: indica se uma thread e "joinable", ou seja, se a thread 
       *               nao sera finalizada ate chegar a uma chamada de funcao
       *               pthread_join().
