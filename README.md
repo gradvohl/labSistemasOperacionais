@@ -8,12 +8,12 @@ Essa disciplina é oferecida na [Faculdade de Tecnologia](https://www.ft.unicamp
 
 ## Estrutura do repositório
 Este repositório está dividido nos seguintes diretórios:
-- :file_folder: CompartMem: com exemplos de códigos para compartilhamento de memória.
-- :file_folder: InfoSistema: com exemplos de códigos para interação com o sistema operacional.
-- :file_folder: Processos: exemplos de códigos para criação de processos.
-- :file_folder: Semaforos: exemplos de códigos para utilização de semáforos e mecanismos de sincronização.
-- :file_folder: Sinais: exemplos de códigos para manipoulação de sinais.
-- :file_folder: Thread: exemplos de códigos para implementação de múltiplos _threads_.
+- :file_folder: ``CompartMem``: com exemplos de códigos para compartilhamento de memória.
+- :file_folder: ``InfoSistema``: com exemplos de códigos para interação com o sistema operacional.
+- :file_folder: ``Processos``: exemplos de códigos para criação de processos.
+- :file_folder: ``Semaforos``: exemplos de códigos para utilização de semáforos e mecanismos de sincronização.
+- :file_folder: ``Sinais``: exemplos de códigos para manipoulação de sinais.
+- :file_folder: ``Thread``: exemplos de códigos para implementação de múltiplos _threads_.
 
 A sequência na qual os diretórios e os exemplos serão explorados está disponível no tutorial.
 
