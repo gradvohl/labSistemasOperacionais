@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: >-
+  labSistemasOperacionais - Códigos exemplo para o tutorial de Sistemas Operacionais
+message: Please cite this tutorial using these metadata.
+type: manual
+version: 1.0
+url: "https://github.com/gradvohl/labSistemasOperacionais"
+doi: 10.5281/zenodo.2620612
+authors:
+  - given-names: "Andre Leon Sampaio"
+    family-names: "Gradvohl"
+    email: gradvohl@unicamp.br
+    affiliation: University of Campinas
+    orcid: 'https://orcid.org/0000-0002-6520-9740'
