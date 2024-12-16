@@ -11,7 +11,6 @@
  * Para compilar:
  *   gcc -pthread prod_cons.c -o prod_cons
  */
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <pthread.h>
@@ -25,7 +24,7 @@ sem_t vazio; // Semaforo para controlar as posicoes vazias no buffer
 sem_t cheio; // Semaforo para controlar as posicoes preenchidas no buffer
 sem_t mutex; // Semaforo binario para garantir exclusao mutua na regiao critica
 
-int buffer[N]; // Armazena os dados produzidos ou consumidos
+int buffer[N];    // Armazena os dados produzidos ou consumidos
 int proxPosCheia; // Proxima posicao cheia
 int proxPosVazia; // Proxima posicao vazia
 int cont;         // Controla a quantidade de dados presentes no buffer
@@ -85,7 +84,7 @@ int main(void)
       exit(0);
 }
 
-// Metodo que produz os itens q/ serao inseridos no buffer (numeros aleatorios)
+// Funcao que produz os itens que serao inseridos no buffer (numeros aleatorios)
 int produz_item()
 {
     int val;
@@ -94,8 +93,8 @@ int produz_item()
     return val;
 }
 
-/* Metodo utilizado p/ mostra o valor q foi consumido 
- * (meramente implementado p/ fins didaticos)
+/* Funcao utilizada para mostrar o valor q foi consumido 
+ * (implementado meramente para fins didaticos)
  */
 void consome_item(int item)
 {
@@ -105,7 +104,7 @@ void consome_item(int item)
 	   puts("\n############## Buffer vazio ##############");
 }
 
-//Metodo que a realiza a insercao do dado no buffer
+//Funcao que a realiza a insercao do dado no buffer
 void insere_item(int val)
 {
     if(cont < N)
@@ -123,7 +122,7 @@ void insere_item(int val)
      }
 }
 
-// Metodo que realiza a retirada do dado do buffer
+// Funcao que realiza a retirada do dado do buffer
 int remove_item()
 {
     int val;
@@ -136,6 +135,8 @@ int remove_item()
     return val;
 }
 
+
+// Implementacao do thread que implementa o produtor.
 void *produtor(void *p_arg)
 {
     int item;
@@ -159,6 +160,7 @@ void *produtor(void *p_arg)
     pthread_exit(NULL);
 }
 
+// Implementacao do thread que implementa o consumidor.
 void *consumidor(void *p_arg)
 {
     int item;
