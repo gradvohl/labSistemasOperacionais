@@ -45,7 +45,7 @@ int main(void)
 
     /**
      * Inicializa os semaforos
-     * 1o parametro: variavel semaforo
+     * 1o parametro: endereço da variavel semaforo
      * 2o parametro: indica se um semaforo sera compartilhado entre as threads 
      *               de um processo ou entre processos o valor 0 indica que o 
      *               semaforo sera compartilhado entre as threads de um processo 
@@ -53,7 +53,7 @@ int main(void)
      *               detalhes)
      * 3o parametro: valor inicial do semaforo
      */
-     sem_init(&mutex, 0 , 1);
+     sem_init(&mutex, 0, 1);
      sem_init(&vazio, 0, N);
      sem_init(&cheio, 0, 0);
 
