@@ -63,13 +63,13 @@ int main(void)
       * 2o parametro: indica se uma thread e "joinable", ou seja, se a thread 
       *               nao sera finalizada ate chegar a uma chamada de funcao
       *               pthread_join().
-      * 3o parametro: indica o nome do metodo que ira compor o trecho de codigo 
-      *               q/ sera executado pela thread
-      * 4o parametro: utilizado qdo se necessita passar algum paramentro a thread. 
-      *               Pode se passar quaisquer tipos de dados, inclusive uma 
-      *               estrutura de dados qdo houver a necessidade de passar mais 
-      *               de um parametroi (dentro do metodo chamado realiza-se um 
-      *               "cast" p/ recuperar os dados)
+      * 3o parametro: indica o nome da funcao com o trecho de codigo que sera
+      *               executado pela thread
+      * 4o parametro: utilizado quando precisa passar algum paramentro a thread. 
+      *               Pode passar quaisquer tipos de dados como parametros, inclusive 
+      *               uma estrutura de dados quando houver a necessidade de passar  
+      *               mais de um parametro (dentro da funcao chamada realiza-se um 
+      *               "cast" para recuperar os dados)
       */
       pthread_create(&thd0, 0, (void *) produtor, NULL);
       pthread_create(&thd1, 0, (void *) consumidor, NULL);
@@ -136,7 +136,7 @@ int remove_item()
 }
 
 
-// Implementacao do thread que implementa o produtor.
+// Implementacao do thread para o produtor.
 void *produtor(void *p_arg)
 {
     int item;
@@ -160,7 +160,7 @@ void *produtor(void *p_arg)
     pthread_exit(NULL);
 }
 
-// Implementacao do thread que implementa o consumidor.
+// Implementacao do thread para o consumidor.
 void *consumidor(void *p_arg)
 {
     int item;
