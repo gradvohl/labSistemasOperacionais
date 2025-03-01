@@ -1,4 +1,4 @@
-# Tutorial de Sistemas Operacionais
+# Códigos fonte para o tutorial de Sistemas Operacionais
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 ![Rocky Linux](https://img.shields.io/badge/-Rocky%20Linux-%2310B981?style=for-the-badge&logo=rockylinux&logoColor=white)
 
